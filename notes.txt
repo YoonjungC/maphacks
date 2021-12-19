@@ -1,0 +1,8 @@
+Steps to the program:
+
+Take two inputs
+The inputs are unique names of two stations, the initial and final station
+for reach station input make an array
+this array contains every "line" they are a part of
+For each line, go to the line arrays, and recursively run through every combination of lines
+once you get the shortest combination of lines, just return every intersection point in that sequence

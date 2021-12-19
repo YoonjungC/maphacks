@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<head>
+<link rel="stylesheet" href="map.css">
+<script src="map.js"></script>
+</head>
+<body>
+  <div> 
+    <div class="topnav">
+      <a class="active" href="index.html">HOME</a>
+      <a href="#map">MAP</a>
+      <a href="#about">ABOUT</a>
+    </div>
+<div id="middle_wrapper"> 
+  <div id="left_side"> 
+    <img id="themap" src="/images/mtrmap.jpg"class="center">
+  </div>
+
+<div id="right_side"> 
+
+<div id="start"> 
+    <h3>Select your Starting Location:</h3>
+    
+    <div class="search_categories">
+    <div class="select">
+       <select name="initial" id="initial" required>
+          <option>	Select Station </option>
+          <option value=	"Admiralty"	>	Admiralty	</option>
+          <option value=	"Airport"	>	Airport	</option>
+          <option value=	"AsiaWorld-Expo"	>	AsiaWorld-Expo	</option>
+          <option value=	"Austin"	>	Austin	</option>
+          <option value=	"Causeway Bay"	>	Causeway Bay	</option>
+          <option value=	"Central"	>	Central	</option>
+          <option value=	"Chai Wan"	>	Chai Wan	</option>
+          <option value=	"Che Kung Temple"	>	Che Kung Temple	</option>
+          <option value=	"Cheung Sha Wan"	>	Cheung Sha Wan	</option>
+          <option value=	"Choi Hung"	>	Choi Hung	</option>
+          <option value=	"City One"	>	City One	</option>
+          <option value=	"Diamond Hill"	>	Diamond Hill	</option>
+          <option value=	"Disneyland Resort"	>	Disneyland Resort	</option>
+          <option value=	"East Tsim Sha Tsui"	>	East Tsim Sha Tsui	</option>
+          <option value=	"Fanling"	>	Fanling	</option>
+          <option value=	"Fo Tan"	>	Fo Tan	</option>
+          <option value=	"Fortress Hill"	>	Fortress Hill	</option>
+          <option value=	"Hang Hau"	>	Hang Hau	</option>
+          <option value=	"Heng Fa Chuen"	>	Heng Fa Chuen	</option>
+          <option value=	"Heng On"	>	Heng On	</option>
+          <option value=	"Hin Keng"	>	Hin Keng	</option>
+          <option value=	"HKU"	>	HKU	</option>
+          <option value=	"Ho Man Tin"	>	Ho Man Tin	</option>
+          <option value=	"Hong Kong"	>	Hong Kong	</option>
+          <option value=	"Hung Hom"	>	Hung Hom	</option>
+          <option value=	"Jordan"	>	Jordan	</option>
+          <option value=	"Kai Tak"	>	Kai Tak	</option>
+          <option value=	"Kam Sheung Road"	>	Kam Sheung Road	</option>
+          <option value=	"Kennedy Town"	>	Kennedy Town	</option>
+          <option value=	"Kowloon Bay"	>	Kowloon Bay	</option>
+          <option value=	"Kowloon Tong"	>	Kowloon Tong	</option>
+          <option value=	"Kowloon"	>	Kowloon	</option>
+          <option value=	"Kwai Fong"	>	Kwai Fong	</option>
+          <option value=	"Kwai Hing"	>	Kwai Hing	</option>
+          <option value=	"Kwun Tong"	>	Kwun Tong	</option>
+          <option value=	"Lai Chi Kok"	>	Lai Chi Kok	</option>
+          <option value=	"Lai King"	>	Lai King	</option>
+          <option value=	"Lam Tin"	>	Lam Tin	</option>
+          <option value=	"Lei Tung"	>	Lei Tung	</option>
+          <option value=	"Lo Wu"	>	Lo Wu	</option>
+          <option value=	"Lohas Park"	>	Lohas Park	</option>
+          <option value=	"Lok Fu"	>	Lok Fu	</option>
+          <option value=	"Lok Ma Chau"	>	Lok Ma Chau	</option>
+          <option value=	"Long Ping"	>	Long Ping	</option>
+          <option value=	"Ma On Shan"	>	Ma On Shan	</option>
+          <option value=	"Mei Foo"	>	Mei Foo	</option>
+          <option value=	"Mong Kok East"	>	Mong Kok East	</option>
+          <option value=	"Mong Kok"	>	Mong Kok	</option>
+          <option value=	"Nam Cheong"	>	Nam Cheong	</option>
+          <option value=	"Ngau Tau Kok"	>	Ngau Tau Kok	</option>
+          <option value=	"North Point"	>	North Point	</option>
+          <option value=	"Ocean Park"	>	Ocean Park	</option>
+          <option value=	"Olympic"	>	Olympic	</option>
+          <option value=	"Po Lam"	>	Po Lam	</option>
+          <option value=	"Prince Edward"	>	Prince Edward	</option>
+          <option value=	"Quarry Bay"	>	Quarry Bay	</option>
+          <option value=	"Race Course"	>	Race Course	</option>
+          <option value=	"Sai Wan Ho"	>	Sai Wan Ho	</option>
+          <option value=	"Sai Ying Pun"	>	Sai Ying Pun	</option>
+          <option value=	"Sha Tin Wan"	>	Sha Tin Wan	</option>
+          <option value=	"Sha Tin"	>	Sha Tin	</option>
+          <option value=	"Sham Shui Po"	>	Sham Shui Po	</option>
+          <option value=	"Shau Kei Wan"	>	Shau Kei Wan	</option>
+          <option value=	"Shek Kip Mei"	>	Shek Kip Mei	</option>
+          <option value=	"Shek Mun"	>	Shek Mun	</option>
+          <option value=	"Sheung Shui"	>	Sheung Shui	</option>
+          <option value=	"Sheung Wan"	>	Sheung Wan	</option>
+          <option value=	"Siu Hong"	>	Siu Hong	</option>
+          <option value=	"South Horizons"	>	South Horizons	</option>
+          <option value=	"Sung Wong Toi"	>	Sung Wong Toi	</option>
+          <option value=	"Sunny Bay"	>	Sunny Bay	</option>
+          <option value=	"Tai Koo"	>	Tai Koo	</option>
+          <option value=	"Tai Po Market"	>	Tai Po Market	</option>
+          <option value=	"Tai Shui Hang"	>	Tai Shui Hang	</option>
+          <option value=	"Tai Wai"	>	Tai Wai	</option>
+          <option value=	"Tai Wan"	>	Tai Wan	</option>
+          <option value=	"Tai Wo Hau"	>	Tai Wo Hau	</option>
+          <option value=	"Tai Wo"	>	Tai Wo	</option>
+          <option value=	"Tin Hau"	>	Tin Hau	</option>
+          <option value=	"Tin Shui Wan"	>	Tin Shui Wan	</option>
+          <option value=	"Tiu Keng Leng"	>	Tiu Keng Leng	</option>
+          <option value=	"Tiu Keng Leng"	>	Tiu Keng Leng	</option>
+          <option value=	"To Kwa Wan"	>	To Kwa Wan	</option>
+          <option value=	"Tseung Kwan O"	>	Tseung Kwan O	</option>
+          <option value=	"Tsim Sha Tsui"	>	Tsim Sha Tsui	</option>
+          <option value=	"Tsing Yi"	>	Tsing Yi	</option>
+          <option value=	"Tsuen Wan West"	>	Tsuen Wan West	</option>
+          <option value=	"Tsuen Wan"	>	Tsuen Wan	</option>
+          <option value=	"Tuen Mun"	>	Tuen Mun	</option>
+          <option value=	"Tung Chung"	>	Tung Chung	</option>
+          <option value=	"University"	>	University	</option>
+          <option value=	"Wan Chai"	>	Wan Chai	</option>
+          <option value=	"Whampoa"	>	Whampoa	</option>
+          <option value=	"Wong Chuk Hang"	>	Wong Chuk Hang	</option>
+          <option value=	"Wong Tai Sin"	>	Wong Tai Sin	</option>
+          <option value=	"Wu Kai Sha"	>	Wu Kai Sha	</option>
+          <option value=	"Yau Ma Tei"	>	Yau Ma Tei	</option>
+          <option value=	"Yau Tong"	>	Yau Tong	</option>
+          <option value=	"Yuen Long"	>	Yuen Long	</option>
+        </select>
+     </div>
+ </div>
+</div>
+
+ <div id="destination"> 
+ <h3>Select your End Location:</h3>
+      <div class="search_categories">
+    <div class="select">
+       <select name="final" id="final" required>
+          <option>Select Station </option>
+                    <option value=	"Airport"	>	Airport	</option>
+          <option value=	"AsiaWorld-Expo"	>	AsiaWorld-Expo	</option>
+          <option value=	"Austin"	>	Austin	</option>
+          <option value=	"Causeway Bay"	>	Causeway Bay	</option>
+          <option value=	"Central"	>	Central	</option>
+          <option value=	"Chai Wan"	>	Chai Wan	</option>
+          <option value=	"Che Kung Temple"	>	Che Kung Temple	</option>
+          <option value=	"Cheung Sha Wan"	>	Cheung Sha Wan	</option>
+          <option value=	"Choi Hung"	>	Choi Hung	</option>
+          <option value=	"City One"	>	City One	</option>
+          <option value=	"Diamond Hill"	>	Diamond Hill	</option>
+          <option value=	"Disneyland Resort"	>	Disneyland Resort	</option>
+          <option value=	"East Tsim Sha Tsui"	>	East Tsim Sha Tsui	</option>
+          <option value=	"Fanling"	>	Fanling	</option>
+          <option value=	"Fo Tan"	>	Fo Tan	</option>
+          <option value=	"Fortress Hill"	>	Fortress Hill	</option>
+          <option value=	"Hang Hau"	>	Hang Hau	</option>
+          <option value=	"Heng Fa Chuen"	>	Heng Fa Chuen	</option>
+          <option value=	"Heng On"	>	Heng On	</option>
+          <option value=	"Hin Keng"	>	Hin Keng	</option>
+          <option value=	"HKU"	>	HKU	</option>
+          <option value=	"Ho Man Tin"	>	Ho Man Tin	</option>
+          <option value=	"Hong Kong"	>	Hong Kong	</option>
+          <option value=	"Hung Hom"	>	Hung Hom	</option>
+          <option value=	"Jordan"	>	Jordan	</option>
+          <option value=	"Kai Tak"	>	Kai Tak	</option>
+          <option value=	"Kam Sheung Road"	>	Kam Sheung Road	</option>
+          <option value=	"Kennedy Town"	>	Kennedy Town	</option>
+          <option value=	"Kowloon Bay"	>	Kowloon Bay	</option>
+          <option value=	"Kowloon Tong"	>	Kowloon Tong	</option>
+          <option value=	"Kowloon"	>	Kowloon	</option>
+          <option value=	"Kwai Fong"	>	Kwai Fong	</option>
+          <option value=	"Kwai Hing"	>	Kwai Hing	</option>
+          <option value=	"Kwun Tong"	>	Kwun Tong	</option>
+          <option value=	"Lai Chi Kok"	>	Lai Chi Kok	</option>
+          <option value=	"Lai King"	>	Lai King	</option>
+          <option value=	"Lam Tin"	>	Lam Tin	</option>
+          <option value=	"Lei Tung"	>	Lei Tung	</option>
+          <option value=	"Lo Wu"	>	Lo Wu	</option>
+          <option value=	"Lohas Park"	>	Lohas Park	</option>
+          <option value=	"Lok Fu"	>	Lok Fu	</option>
+          <option value=	"Lok Ma Chau"	>	Lok Ma Chau	</option>
+          <option value=	"Long Ping"	>	Long Ping	</option>
+          <option value=	"Ma On Shan"	>	Ma On Shan	</option>
+          <option value=	"Mei Foo"	>	Mei Foo	</option>
+          <option value=	"Mong Kok East"	>	Mong Kok East	</option>
+          <option value=	"Mong Kok"	>	Mong Kok	</option>
+          <option value=	"Nam Cheong"	>	Nam Cheong	</option>
+          <option value=	"Ngau Tau Kok"	>	Ngau Tau Kok	</option>
+          <option value=	"North Point"	>	North Point	</option>
+          <option value=	"Ocean Park"	>	Ocean Park	</option>
+          <option value=	"Olympic"	>	Olympic	</option>
+          <option value=	"Po Lam"	>	Po Lam	</option>
+          <option value=	"Prince Edward"	>	Prince Edward	</option>
+          <option value=	"Quarry Bay"	>	Quarry Bay	</option>
+          <option value=	"Race Course"	>	Race Course	</option>
+          <option value=	"Sai Wan Ho"	>	Sai Wan Ho	</option>
+          <option value=	"Sai Ying Pun"	>	Sai Ying Pun	</option>
+          <option value=	"Sha Tin Wan"	>	Sha Tin Wan	</option>
+          <option value=	"Sha Tin"	>	Sha Tin	</option>
+          <option value=	"Sham Shui Po"	>	Sham Shui Po	</option>
+          <option value=	"Shau Kei Wan"	>	Shau Kei Wan	</option>
+          <option value=	"Shek Kip Mei"	>	Shek Kip Mei	</option>
+          <option value=	"Shek Mun"	>	Shek Mun	</option>
+          <option value=	"Sheung Shui"	>	Sheung Shui	</option>
+          <option value=	"Sheung Wan"	>	Sheung Wan	</option>
+          <option value=	"Siu Hong"	>	Siu Hong	</option>
+          <option value=	"South Horizons"	>	South Horizons	</option>
+          <option value=	"Sung Wong Toi"	>	Sung Wong Toi	</option>
+          <option value=	"Sunny Bay"	>	Sunny Bay	</option>
+          <option value=	"Tai Koo"	>	Tai Koo	</option>
+          <option value=	"Tai Po Market"	>	Tai Po Market	</option>
+          <option value=	"Tai Shui Hang"	>	Tai Shui Hang	</option>
+          <option value=	"Tai Wai"	>	Tai Wai	</option>
+          <option value=	"Tai Wan"	>	Tai Wan	</option>
+          <option value=	"Tai Wo Hau"	>	Tai Wo Hau	</option>
+          <option value=	"Tai Wo"	>	Tai Wo	</option>
+          <option value=	"Tin Hau"	>	Tin Hau	</option>
+          <option value=	"Tin Shui Wan"	>	Tin Shui Wan	</option>
+          <option value=	"Tiu Keng Leng"	>	Tiu Keng Leng	</option>
+          <option value=	"Tiu Keng Leng"	>	Tiu Keng Leng	</option>
+          <option value=	"To Kwa Wan"	>	To Kwa Wan	</option>
+          <option value=	"Tseung Kwan O"	>	Tseung Kwan O	</option>
+          <option value=	"Tsim Sha Tsui"	>	Tsim Sha Tsui	</option>
+          <option value=	"Tsing Yi"	>	Tsing Yi	</option>
+          <option value=	"Tsuen Wan West"	>	Tsuen Wan West	</option>
+          <option value=	"Tsuen Wan"	>	Tsuen Wan	</option>
+          <option value=	"Tuen Mun"	>	Tuen Mun	</option>
+          <option value=	"Tung Chung"	>	Tung Chung	</option>
+          <option value=	"University"	>	University	</option>
+          <option value=	"Wan Chai"	>	Wan Chai	</option>
+          <option value=	"Whampoa"	>	Whampoa	</option>
+          <option value=	"Wong Chuk Hang"	>	Wong Chuk Hang	</option>
+          <option value=	"Wong Tai Sin"	>	Wong Tai Sin	</option>
+          <option value=	"Wu Kai Sha"	>	Wu Kai Sha	</option>
+          <option value=	"Yau Ma Tei"	>	Yau Ma Tei	</option>
+          <option value=	"Yau Tong"	>	Yau Tong	</option>
+          <option value=	"Yuen Long"	>	Yuen Long	</option>
+        </select>
+     </div>
+ </div>
+ </div>
+
+
+<button id = "submit" onClick="everything2()">Travel!</button>
+<!-- <input type="button" id= "travel">Travel!</button> -->
+<!-- <input id="submit" type="button" onClick="everything(\'' + result.name + '\')" /> -->
+
+</div>
+
+
+</div>
+
+<div id="bottom_wrapper"> 
+<div id="output_section"> 
+
+</div>
+<div id="input_stations"> 
+  <div id="first_box"> 
+    <h4 id = "initialLO"> Initial <br> Location </h4>
+    <script>
+
+</script>
+  </div>
+<img id ="mtrline" src ="/images/mtrline.png">
+
+  <div id="second_box"> 
+    <h4 id = "finalLO"> Final <br> Location </h4>
+  </div>
+</div>
+</div>
+
+
+</div>
+
+  
+</div>
+</body>
+</html><html>
+
