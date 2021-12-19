@@ -1,18 +1,22 @@
 <!DOCTYPE html>
+
 <head>
-<link rel="stylesheet" href="map.css">
-<script src="map.js"></script>
+	<link rel="stylesheet" href="map.css">
+	<script src="map.js">
+
+	</script>
 </head>
+
 <body>
-  <div> 
-    <div class="topnav">
-      <a class="active" href="index.html">HOME</a>
-      <a href="#map">MAP</a>
-      <a href="#about">ABOUT</a>
-    </div>
-<div id="middle_wrapper"> 
-  <div id="left_side"> 
-    <img id="themap" src="/images/mtrmap.jpg"class="center">
+	<div>
+		<div class="topnav">
+			<a href="index.html">HOME</a>
+			<a class="active" href="#map">MAP</a>
+
+		</div>
+		<div id="middle_wrapper">
+			<div id="left_side">
+				<img id="themap" src="/images/mtrmap.jpg"class="center">
   </div>
 
 <div id="right_side"> 
@@ -238,7 +242,7 @@
  </div>
 
 
-<button id = "submit" onClick="everything2()">Travel!</button>
+<button id = "submit" onClick="mixedFunc()">Travel!</button>
 <!-- <input type="button" id= "travel">Travel!</button> -->
 <!-- <input id="submit" type="button" onClick="everything(\'' + result.name + '\')" /> -->
 
@@ -248,24 +252,35 @@
 </div>
 
 <div id="bottom_wrapper"> 
-<div id="output_section"> 
 
-</div>
 <div id="input_stations"> 
   <div id="first_box"> 
     <h4 id = "initialLO"> Initial <br> Location </h4>
-    <script>
-
-</script>
   </div>
-<img id ="mtrline" src ="/images/mtrline.png">
-
+  <img id ="mtrline" src ="/images/mtrline.png">
   <div id="second_box"> 
     <h4 id = "finalLO"> Final <br> Location </h4>
   </div>
 </div>
-</div>
 
+<div class="table_container"> 
+<section class="tablewrapper" id = "table2">
+    <main class="row title">
+      <ul id="names_section">
+        <li>Number of Lines</li>
+        <li>Interchange Station</li>
+        <li>Line Color</li>
+      </ul>
+    </main>
+    <article class="row title">
+      <div id = "table55">
+        
+      </div>
+    </article>
+    
+  </section>
+</div>
+</div>
 
 </div>
 
@@ -273,4 +288,3 @@
 </div>
 </body>
 </html><html>
-

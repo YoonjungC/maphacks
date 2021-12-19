@@ -1,4 +1,4 @@
-// /* When the user clicks on the button, 
+  // /* When the user clicks on the button, 
 // toggle between hiding and showing the dropdown content */
 // function myFunction() {
 //   document.getElementById("myDropdown").classList.toggle("show");
@@ -18,6 +18,8 @@
 //   }
 // }
 
+
+
 const R = ["BR", "O", "LG", "DG", "DB", "Y"];
 const DB = ["DP", "R", "Y", "DG", "O"];
 const Y = ["DB", "R"];
@@ -28,6 +30,16 @@ const LB = ["BR", "LG", "BR"];
 const BR = ["LB", "LG", "O", "R"];
 const PI = ["O"]
 const DP = ["DB","LG"];
+const colors = {"R" : "Red",
+            "DB" : "Dark Blue",
+            "Y" : "Yellow",
+            "O" : "Orange",
+            "LG": "Light Green",
+            "DG": "Dark Green",
+            "LB": "Light Blue",
+            "BR": "Brown",
+            "PI": "Pink",
+            "DP": "Dark Purple"};
 const dict = {"R" : R,
             "DB" : DB,
             "Y" : Y,
@@ -144,10 +156,10 @@ const dict3 = {
 }
 const dict4 = {
   "Admiralty": ["DB","R", "Y"],
-  "Central": ["DB", "R"],
+  "Central": ["DB", "R", "O", "DG"],
   "Diamond Hill": ["BR", "LG"],
   "Ho Man Tin": ["BR","LG"],
-  "Hong Kong": ["DG","O"],
+  "Hong Kong": ["DB", "R", "O", "DG"],
   "Hung Hom": ["BR","LB"],
   "Kowloon": ["DG","O"],
   "Lai King": ["O","R"],
@@ -165,11 +177,11 @@ const dict4 = {
 }
 
 const dict5 = {
-  "Admiralty": ["DB","R"],
-  "Central": ["DB", "R"],
+  "Admiralty": ["DB", "R", "Y"],
+  "Central": ["DB", "R", "O", "DG"],
   "Diamond Hill": ["BR", "LG"],
   "Ho Man Tin": ["BR","LG"],
-  "Hong Kong": ["DG","O"],
+  "Hong Kong": ["DB", "R", "O", "DG"],
   "Hung Hom": ["BR","LB"],
   "Kowloon": ["DG","O"],
   "Lai King": ["O","R"],
@@ -185,6 +197,13 @@ const dict5 = {
   "Yau Ma Tei": ["LG","R"],
   "Yau Tong": ["DP","LG"]
 }
+
+function mixedFunc() {
+  everything2();
+  window.scrollBy(0, 700);
+  // document.getElementById('bottom_wrapper').scrollTop -= 10;
+}
+
 
 function mFilter(all){
     var length1 = 100000;
@@ -224,6 +243,18 @@ function mFFFilter(all){
     return temp[temp.length-1];   
 }
 
+function compare(whole, part){
+    const state = true;
+    const parts = [false, false];
+    for (let i = 0; i < 2; i++){
+        for (let l = 0; l < whole.length; l++){
+            if (part[i] == whole[l]){
+                parts[i] = [true];
+            }
+        }
+    }
+    return (parts[0] && parts[1]);
+}
 
 function mREC(final, base){
     
@@ -307,10 +338,30 @@ function everything(final, initial){
       all.push(mREC(finals[l],[initials[i]]));
     }
   }
-  return mFFFilter(all);
+  const end = mFFFilter(all);
+  const complete = [];
+  var counter = 0;
+  if (end.length == 2){
+      return [["No Line Changes Required!"]];
+  } else {
+      for (let i = 1; i < end.length-1; i++){
+          for (let l in dict5){
+              let tempComp = [];
+              var temp = [end[i], end[i-1]];
+              temp.sort();
+              if (compare(dict5[l], temp)){
+                  counter++;
+                  tempComp.push(counter);
+                  tempComp.push(l);
+                  tempComp.push(colors[end[i]]);
+                  complete.push(tempComp);
+                  break;
+              }
+          }
+      }
+      return complete;
+  }
 }
-
-
 // function intfilter(){
 //     const stations;
 // }
@@ -320,5 +371,11 @@ function everything2(){
   var final = document.getElementById("final").value;
   document.getElementById("initialLO").innerHTML = document.getElementById("initial").value;
   document.getElementById("finalLO").innerHTML = document.getElementById("final").value;
-  // alert(everything(final, initial));
+  const lol = "LOL";
+  const allz = everything(final, initial);
+  
+  for(let i = 0;i<allz.length;i++){
+    // alert(allz[i]);
+    document.getElementById("table55").innerHTML += ("<ul><li>"+allz[i][0]+"</li><li>"+allz[i][1]+"</li><li>"+allz[i][2]+"</li></ul>");
+  }
 }
